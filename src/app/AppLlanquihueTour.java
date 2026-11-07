@@ -10,10 +10,29 @@ import model.Direccion;
 import utiles.Rut;
 
 /**
- *
+ * Clase principal de la app Llanquihue Tour.
+ * 
+ * Permite ejecutar el programa y comprobar el funcionamiento
+ * de las clases mediante la creación de objetos CLiente y Empleado.
+ * 
+ * Se utilizan los objetos Direccion y Rut asociados a cada persona,
+ * demostrando los conceptos deherencia y composición.
+ * 
  * @author Hxru
+ * @version 1.0
  */
 public class AppLlanquihueTour {
+    /**
+     * Punto de entrada principal de la aplicación.
+     * 
+     * Crea objetos de tipo Direccion y Rut para registrar
+     * los datos de un cliente o un empleado.
+     * 
+     * Posteriormente, muestra sus datos en consola
+     * utilizando los métodos toString().
+     * 
+     * @param args Argumentos recibos desde la línea de comandos.
+     */
     public static void main(String[] args){
         // Incorporación de los datos de la primera persona, en este caso, un cliente
         Direccion direccionC= new Direccion("Los Alerces", 125, "Puerto Varas", "Puerto Varas");
