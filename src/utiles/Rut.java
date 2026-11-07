@@ -9,5 +9,6 @@ package utiles;
  * @author Hxru
  */
 public class Rut {
-    
+    private int numero;
+    private char dVerificador;
 }
