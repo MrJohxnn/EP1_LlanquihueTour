@@ -103,7 +103,7 @@ public class Direccion {
      */
     @Override
     public String toString() {
-        return "Direccion: " + "calle: " + calle + ", numero: " + numero + ", comuna: " + comuna + ", ciudad: " + ciudad;
+        return "calle: " + calle + ", numero: " + numero + ", comuna: " + comuna + ", ciudad: " + ciudad;
     }
     
 }

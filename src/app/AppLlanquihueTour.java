@@ -44,22 +44,22 @@ public class AppLlanquihueTour {
         Rut rutE1 = new Rut(87654321, '4');
         Empleado empleado1 = new Empleado("Juan", "Perez", direccionE1, rutE1, "EMP001", "Chofer", 850000);
         
-        System.out.println("--------Nuevo registro---------");
+        System.out.println("--------Nuevo registro--------");
         System.out.println(cliente1);
-        System.out.println("\n--------Nuevo registro---------");
+        System.out.println("\n--------Nuevo registro--------");
         System.out.println(empleado1);
         
         
         // Datos para probar nuevos ingresos (eliminar /* para probar)
         /*
-        System.out.print("\n");
-        System.out.println("Nuevos ingresos \n");
+        System.out.println("\n--------Nuevo registro--------");
         // Incorporación de los datos de luna tercera persona, para un cliente
         Direccion direccionC2= new Direccion("Las Acacias", 307, "Frutillar", "Frutillar");
         Rut rutC2 = new Rut(11222333, 'k');
         Cliente cliente2 = new Cliente("Pablo", "Marmol", direccionC2, rutC2, "CLI001", true);
         
         // Incorporación de datos de segunda persona, para un empleado
+        System.out.println("\n--------Nuevo registro--------");
         Direccion direccionE2= new Direccion("Lago Llanquihue", 660, "Puerto Varas", "Puerto Varas");
         Rut rutE2 = new Rut(44555666, 'K');
         Empleado empleado2 = new Empleado("Jaime", "Zuniga", direccionE2, rutE2, "EMP001", "Chofer", 850000);
