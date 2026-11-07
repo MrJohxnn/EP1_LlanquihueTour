@@ -9,8 +9,8 @@ import utiles.Rut;
 /**
  * Registro de personas de Llanquihue Tour.
  * 
- * Almacena datos de cada persona registrada en Llanquihue Tour,
- * tanto clientes como empleados.
+ * Almacena datos comunes de cliente y empleados,
+ * incluyendo referencias a objetos Direccion y Rut.
  * Hereda información desde clase Direccion y clase Rut.
  * @author Hxru
  */

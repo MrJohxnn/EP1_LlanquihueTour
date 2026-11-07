@@ -22,6 +22,7 @@ public class Empleado extends Persona {
      * Construye la estructura para registro de empleado, heredando datos desde clase Persona.
      * @param nombre Nombre del empleado.
      * @param apellido Apellido del empleado.
+     * @param direccion Dirección del empleado.
      * @param rut Rut del empleado.
      * @param codigoEmpleado Código de empleado.
      * @param cargo Cargo del empleado.
