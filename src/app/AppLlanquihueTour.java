@@ -13,7 +13,7 @@ import utiles.Rut;
  * Clase principal de la app Llanquihue Tour.
  * 
  * Permite ejecutar el programa y comprobar el funcionamiento
- * de las clases mediante la creación de objetos CLiente y Empleado.
+ * de las clases mediante la creación de objetos Cliente y Empleado.
  * 
  * Se utilizan los objetos Direccion y Rut asociados a cada persona,
  * demostrando los conceptos deherencia y composición.
@@ -35,16 +35,37 @@ public class AppLlanquihueTour {
      */
     public static void main(String[] args){
         // Incorporación de los datos de la primera persona, en este caso, un cliente
-        Direccion direccionC= new Direccion("Los Alerces", 125, "Puerto Varas", "Puerto Varas");
-        Rut rutC = new Rut(12345678, '5');
-        Cliente cliente1 = new Cliente("Pedro", "Gonzalez", direccionC, rutC, "CLI001", true);
+        Direccion direccionC1= new Direccion("Los Alerces", 125, "Puerto Varas", "Puerto Varas");
+        Rut rutC1 = new Rut(12345678, '5');
+        Cliente cliente1 = new Cliente("Pedro", "Gonzalez", direccionC1, rutC1, "CLI001", true);
         
         // Incorporación de datos de segunda persona, para un empleado
-        Direccion direccionE= new Direccion("San Francisco", 450, "Puerto Varas", "Puerto Varas");
-        Rut rutE = new Rut(87654321, '4');
-        Empleado empleado1 = new Empleado("Juan", "Perez", direccionE, rutE, "EMP001", "Chofer", 850000);
+        Direccion direccionE1= new Direccion("San Francisco", 450, "Puerto Varas", "Puerto Varas");
+        Rut rutE1 = new Rut(87654321, '4');
+        Empleado empleado1 = new Empleado("Juan", "Perez", direccionE1, rutE1, "EMP001", "Chofer", 850000);
         
+        System.out.println("--------Nuevo registro---------");
         System.out.println(cliente1);
+        System.out.println("\n--------Nuevo registro---------");
         System.out.println(empleado1);
+        
+        
+        // Datos para probar nuevos ingresos (eliminar /* para probar)
+        /*
+        System.out.print("\n");
+        System.out.println("Nuevos ingresos \n");
+        // Incorporación de los datos de luna tercera persona, para un cliente
+        Direccion direccionC2= new Direccion("Las Acacias", 307, "Frutillar", "Frutillar");
+        Rut rutC2 = new Rut(11222333, 'k');
+        Cliente cliente2 = new Cliente("Pablo", "Marmol", direccionC2, rutC2, "CLI001", true);
+        
+        // Incorporación de datos de segunda persona, para un empleado
+        Direccion direccionE2= new Direccion("Lago Llanquihue", 660, "Puerto Varas", "Puerto Varas");
+        Rut rutE2 = new Rut(44555666, 'K');
+        Empleado empleado2 = new Empleado("Jaime", "Zuniga", direccionE2, rutE2, "EMP001", "Chofer", 850000);
+        
+        System.out.println(cliente2);
+        System.out.println(empleado2);
+        */
     }
 }

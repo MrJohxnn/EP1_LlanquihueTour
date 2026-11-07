@@ -71,6 +71,16 @@ public class Cliente extends Persona {
      */
     @Override
     public String toString(){
-        return super.toString() + ", codigoCliente=" + codigoCliente + ". clienteFrecuente=" + clienteFrecuente;
+        // Convierte true  o false a un Si o un No
+        String frecuente;
+        
+        if(clienteFrecuente == true){
+            frecuente = "Si";
+        }
+        else{
+            frecuente = "No";
+        }
+        
+        return "- Cliente -\n" + super.toString() + "\n Codigo de cliente: " + codigoCliente + "\n Cliente frecuente?: " + frecuente;
     }
 }
