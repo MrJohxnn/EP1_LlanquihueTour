@@ -1,4 +1,5 @@
 ![Duoc UC](https://www.duoc.cl/wp-content/uploads/2022/09/logo-0.png)
+
 # 🧠 Evaluación Parcial 1 – Desarrollo Orientado a Objetos I
 
 ## 👤 Autor del proyecto
@@ -10,9 +11,14 @@
 ---
 
 ## 📘 Descripción general del sistema
-Este proyecto corresponde a la Evaluación Parcial 1 de la asignatura *Desarrollo Orientado a Objetos I*. Se trata de un sistema orientado a objetos desarrollado en Java, cuyo objetivo es modelar y gestionar entidades representativas de un dominio real, aplicando los principios de encapsulamiento, composición, herencia, polimorfismo e interfaces.
 
-El proyecto fue desarrollado a partir de un caso contextualizado, abordando problemáticas reales y proponiendo una solución estructurada, modular y reutilizable.
+**Llanquihue Tour** es una aplicación desarrollada en Java para representar información de clientes y empleados de una empresa de turismo mediante programación orientada a objetos.
+
+El proyecto aplica los conceptos de **encapsulamiento, herencia y composición**, utilizando clases relacionadas para organizar los datos de personas, direcciones y RUT.
+
+La clase `Persona` contiene los atributos comunes de clientes y empleados. Las clases `Cliente` y `Empleado` heredan de `Persona` e incorporan sus propios atributos. A su vez, los objetos de tipo `Persona` se relacionan con objetos `Direccion` y `Rut` mediante composición.
+
+La aplicación permite crear objetos de ejemplo y mostrar su información en consola utilizando el método `toString()`.
 
 ---
 
@@ -20,43 +26,42 @@ El proyecto fue desarrollado a partir de un caso contextualizado, abordando prob
 
 ```plaintext
 📁 src/
-├── app/         # Clase principal con el método main
-├── model/       # Clases de dominio (Persona, Cliente, Empleado, Producto, etc.)
-├── data/        # Clases para la carga y lectura de archivos .txt
-├── utils/       # Utilidades y validaciones
-└── interfaces/  # Interfaces implementadas por las clases
-````
+├── app/         # AppLlanquihueTour: clase principal con el método main
+├── model/       # Persona, Cliente, Empleado y Direccion
+└── utiles/      # Rut: clase para representar los datos del RUT
+```
+
+### Clases principales
+
+- **Persona:** clase base con nombre, apellido, dirección y RUT.
+- **Cliente:** hereda de Persona y agrega código de cliente y condición de cliente frecuente.
+- **Empleado:** hereda de Persona y agrega código de empleado, cargo y sueldo.
+- **Direccion:** representa la información de dirección asociada a una persona.
+- **Rut:** representa la información del RUT.
+- **AppLlanquihueTour:** contiene el método `main` y ejecuta las pruebas de creación y visualización de objetos.
 
 ---
-
-
 
 ## ⚙️ Instrucciones para clonar y ejecutar el proyecto
 
 1. Clona el repositorio desde GitHub:
 
 ```bash
-git clone https://github.com/usuario/repositorio-evaluacion-final.git
+git clone https://github.com/MrJohxnn/EP1_LlanquihueTour.git
 ```
 
-2. Abre el proyecto en IntelliJ IDEA.
-
-3. Verifica que los archivos `.txt` estén correctamente ubicados.
-
-4. Ejecuta el archivo `Main.java` desde el paquete `app`.
-
-5. Sigue las instrucciones en consola o en la interfaz gráfica (si corresponde).
-
+2. Abre el proyecto en **Apache NetBeans**.
+3. Verifica que el proyecto tenga configurado un JDK compatible.
+4. Ubica la clase `AppLlanquihueTour` dentro del paquete `app`.
+5. Ejecuta el proyecto o el método `main` de esa clase.
+6. Revisa en la consola la información de los clientes y empleados creados.
 
 ---
 
-**Repositorio GitHub:** \[Pega aquí el enlace al repositorio]
-**Fecha de entrega:** \[DD/MM/2025]
+**Repositorio GitHub:** https://github.com/MrJohxnn/EP1_LlanquihueTour
+
+**Fecha de entrega:** 07/11/2026
 
 ---
 
-© Duoc UC | Escuela de Informática y Telecomunicaciones | Evaluación Final Transversal EFT
-
-
-
-
+© Duoc UC | Escuela de Informática y Telecomunicaciones | Evaluación Parcial 1
