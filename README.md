@@ -44,6 +44,15 @@ La aplicación permite crear objetos de ejemplo y mostrar su información en con
 
 ## ⚙️ Instrucciones para clonar y ejecutar el proyecto
 
+### Requisitos previos
+
+Para compilar y ejecutar el proyecto se necesita:
+- **Java Development Kit (JDK):** versión 26 o superior.
+- **Entorno de desarrollo:** Apache NetBeans.
+- **Git:** para clonar el repositorio (opcional si se descarga como ZIP).
+
+### Pasos para ejecutar
+
 1. Clona el repositorio desde GitHub:
 
 ```bash
@@ -57,7 +66,25 @@ git clone https://github.com/MrJohxnn/EP1_LlanquihueTour.git
 6. Revisa en la consola la información de los clientes y empleados creados.
 
 ---
+## 🧪 Pruebas adicionales
 
+El proyecto incluye datos adicionales comentados en la clase `AppLlanquihueTour`, que pueden habilitarse para realizar pruebas con diferentes instancias.
+
+**Para utilizarlos:**
+
+1. Abre el archivo `AppLlanquihueTour.java`, ubicado en el paquete `app`.
+2. Busca las declaraciones comentadas de los objetos `direccion2` y `rut2`.
+3. Elimina los símbolos de comentario (`/*` y `*/`) para habilitar las instrucciones.
+4. Verifica que ambos objetos sean utilizados al crear la instancia correspondiente de `Empleado`.
+5. Ejecuta nuevamente el método `main`.
+6. Comprueba en la consola que se muestre correctamente la información del empleado mediante el método `toString()`.
+
+> **Nota:** Estos datos son opcionales y se mantienen comentados
+> para conservar la ejecución principal del proyecto.
+> Al habilitarlos, deben estar correctamente referenciados
+> en la creación del objeto correspondiente.
+
+---
 **Repositorio GitHub:** https://github.com/MrJohxnn/EP1_LlanquihueTour
 
 **Fecha de entrega:** 07/11/2026
