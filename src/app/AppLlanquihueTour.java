@@ -4,6 +4,7 @@
  */
 package app;
 
+import data.CargarPersonas;
 import model.Cliente;
 import model.Empleado;
 import model.Direccion;
@@ -101,5 +102,10 @@ public class AppLlanquihueTour {
         System.out.println("\nPersonas registradas:");
         gestion.mostrarPersonas();
         */
+        
+        System.out.println("\n--- CARGA DE ARCHIVO TXT ---");
+
+        CargarPersonas carga = new CargarPersonas();
+        carga.cargarArchivo("personas.txt");
     }
 }

@@ -1,0 +1,3 @@
+CLIENTE;Ana;Muñoz;12345678;5;Los Alerces;120;Puerto Varas;Puerto Varas;C001;true
+CLIENTE;Pedro;Soto;11111111;1;Los Robles;250;Llanquihue;Llanquihue;C002;false
+EMPLEADO;Carlos;Rojas;22222222;2;Los Lagos;350;Puerto Montt;Puerto Montt;E001;Guia turistico;850000
