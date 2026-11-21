@@ -67,5 +67,19 @@ public class AppLlanquihueTour {
         System.out.println("\n--------Nuevo registro--------");
         System.out.println(empleado2);
         */
+        
+        //Pruebas de validación de rut
+        /*
+        System.out.println("\n--- PRUEBA DE VALIDACION DE RUT ---");
+
+        Rut rutValido = new Rut(12345678, '5');
+        Rut rutInvalido = new Rut(12345678, '9');
+
+        System.out.println("RUT 1: " + rutValido);
+        System.out.println("Es valido?: " + rutValido.esValido());
+
+        System.out.println("RUT 2: " + rutInvalido);
+        System.out.println("Es valido?: " + rutInvalido.esValido());
+        */
     }
 }
