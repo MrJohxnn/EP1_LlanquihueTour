@@ -57,6 +57,40 @@ public class Rut {
     public void setdVerificador(char dVerificador) {
         this.dVerificador = dVerificador;
     }
+    
+    private char calcularDV(){
+        int factor = 2;
+        int suma = 0;
+        int intRut = this.numero;
+        
+        while(intRut != 0){
+            int digito = intRut % 10;
+            suma += digito * factor;
+            
+            factor++;
+            
+            if(factor == 8){
+                factor = 2;
+            }
+            
+           intRut /= 10;
+        }
+        
+        int resultado = 11-(suma % 11);
+        
+        switch(resultado){
+            case 11: return '0';
+            case 10: return 'K';
+            default: return(char)(resultado + '0');
+        }
+    }
+    
+    public boolean esValido(){
+        if(numero < 1000000 || numero > 99999999){
+            return false;
+        }
+        return Character.toUpperCase(dVerificador) == calcularDV();
+    }
 
     /**
      * Entrega una representación visual del rut de la persona.

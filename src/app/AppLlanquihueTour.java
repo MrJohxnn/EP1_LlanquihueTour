@@ -7,6 +7,7 @@ package app;
 import model.Cliente;
 import model.Empleado;
 import model.Direccion;
+import service.GestionPersonas;
 import utiles.Rut;
 
 /**
@@ -80,6 +81,25 @@ public class AppLlanquihueTour {
 
         System.out.println("RUT 2: " + rutInvalido);
         System.out.println("Es valido?: " + rutInvalido.esValido());
+        */
+        
+        //Pruebas de registros duplicados
+        /*
+        System.out.println("\n--- PRUEBA GESTION DE PERSONAS ---");
+
+        GestionPersonas gestion = new GestionPersonas();
+
+        // Primera inscripción
+        System.out.println("Primer registro:");
+        System.out.println(gestion.agregarPersona(cliente1));
+
+        // Intentamos registrar nuevamente al mismo cliente
+        System.out.println("\nRegistro duplicado:");
+        System.out.println(gestion.agregarPersona(cliente1));
+
+        // Mostramos los registros
+        System.out.println("\nPersonas registradas:");
+        gestion.mostrarPersonas();
         */
     }
 }
